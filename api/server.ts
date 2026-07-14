@@ -11,7 +11,7 @@ export const app = fastify({
 
 app.register(cors, {
     origin: "*", // Permite qualquer origem (podes mudar para o teu link de produção depois)
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 });
 
 app.get('/', async () => {
