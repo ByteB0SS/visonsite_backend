@@ -21,7 +21,7 @@ export class BrevoNotifierAdapter implements NotifierPort {
                 },
                 body: JSON.stringify({
                     sender: { 
-                        name: "VisionSite Alerta", 
+                        name: "Sintex Alerta", 
                         email: "rubemernesto2@gmail.com" 
                     },
                     to: this.sendToEmails.map(email => ({ 
